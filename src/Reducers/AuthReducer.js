@@ -3,12 +3,13 @@ import * as actionTypes from './actionTypes';
 
 const initialState={
     loading:false,
+    isLogged:false
 }
  const authReducer=(state=initialState,action)=>{
 
 
     switch(action.type){
-        case actionTypes.PURCHASE_BURGER_SUCCESS:
+        case actionTypes.START_AUTH_REQUEST:
            
             return{
                 ...state,

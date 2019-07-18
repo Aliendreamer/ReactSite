@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-
+import Form from '../Components/CoursesForm';
+import CourseSlider from '../Components/Courses';
 class MainBody extends Component{
 
     render(){
@@ -9,10 +10,10 @@ class MainBody extends Component{
                     first div
                 </div>
                 <div>
-                    second div
+                    <Form/>
                 </div>
                 <div>
-                    third div
+                   <CourseSlider/>
                 </div>
                 <div>
                     fourth div
