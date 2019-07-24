@@ -7,21 +7,22 @@ import {Provider} from 'react-redux';
 import {createStore,combineReducers,applyMiddleware,compose} from 'redux';
 import * as serviceWorker from './serviceWorker';
 import AuthReducer from './Reducers/AuthReducer';
-
 import thunk from 'redux-thunk';
-const rootReducer=combineReducers({
-   authReducer: AuthReducer,
-})
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const  store=createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
 
-const app = (
-    <Provider store={store}>
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-    </Provider>
-);
+const rootReducer=combineReducers({
+    authReducer: AuthReducer
+ })
+ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+ const  store=createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
+ 
+ const app = (
+     <Provider store={store}>
+     <BrowserRouter>
+         <App />
+     </BrowserRouter>
+     </Provider>
+ );
+ 
 
 
 ReactDOM.render(app, document.getElementById('root'));

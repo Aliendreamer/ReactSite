@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './../App.css';
+import classes from './../App.module.css';
 
 
 const backdrop=(props)=>{
 
   return(
-    props.show? <div className={classes.Backdrop}
+    props.show? <div className={classes.BackDrop}
     onClick={props.close}
     ></div>:null
   )
