@@ -57,6 +57,7 @@ node_modules
 env.development.local
 # StyleCop
 StyleCopReport.xml
+appsettings.local.json
 
 # Files built by Visual Studio
 *_i.c
