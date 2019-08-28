@@ -44,7 +44,7 @@ export const auth=(username,password)=>{
         }
     }
       
-        const url=process.env.REACT_APP_BASE_URL+`user/${process.env.REACT_APP_API_KEY}/login`;
+        const url=process.env.REACT_APP_BASE_UR+`user/${process.env.REACT_APP_API_KEY}/login`;
         axios.post(url,authData,options)
         .then(response=>{
             debugger;

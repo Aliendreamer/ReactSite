@@ -1,6 +1,6 @@
 import React from 'react';
 import Backdrop from './Backdrop';
-import clasess from './/./../App.module.css';
+import clasess from '././../App.module.css';
 
 const modal=(props)=>(
     

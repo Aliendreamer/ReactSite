@@ -5,9 +5,10 @@ import classes from './../App.module.css';
 const backdrop=(props)=>{
 
   return(
-    props.show? <div className={classes.BackDrop}
-    onClick={props.close}
-    ></div>:null
+    props.show? 
+    <div className={classes.Backdrop}
+    onClick={props.close}>
+    </div>:null
   )
 }
 
