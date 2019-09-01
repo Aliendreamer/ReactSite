@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AcademySiteBackend</name>
+    </assembly>
+    <members>
+        <member name="M:AcademySiteBackend.Controllers.UserController.PostLogin(System.String,System.String)">
+             <summary>
+             Creates a TodoItem.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Login
+                 {
+                    "id": 1,
+                    "name": "Item1",
+                    "password": true
+                 }
+            
+             </remarks>
+             <param name="username"></param>
+             <param name="password"></param>
+             <returns>A newly created TodoItem</returns>
+             <response code="201">Returns login auth</response>
+             <response code="400">If login failed</response>
+        </member>
+    </members>
+</doc>

@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace AcademySiteBackend
 {
-	using Helpers;
-
 	public class Program
 	{
 		public static void Main(string[] args)
