@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AcademyData
 {
-    public class AcademyDbContext : IdentityDbContext<IdentityUser<int>,IdentityRole<int>,int>
-    {
-        public AcademyDbContext(DbContextOptions<AcademyDbContext> options)
-            : base(options)
-        {
-        }
-    }
+	public class AcademyDbContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>, IMigrationContext
+	{
+		public AcademyDbContext(DbContextOptions options)
+			: base(options)
+		{
+		}
+	}
 }
