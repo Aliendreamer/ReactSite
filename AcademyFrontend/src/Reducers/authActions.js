@@ -43,10 +43,11 @@ export const auth=(username,password)=>{
             "X-Kinvey-API-Version":3
         }
     }
-      
-        const url=process.env.REACT_APP_BASE_UR+`user/${process.env.REACT_APP_API_KEY}/login`;
+       debugger;
+        const url=`https://baas.kinvey.com/user/05f178f4b61343149f62073f0b3bb0b8/login`;
         axios.post(url,authData,options)
         .then(response=>{
+
             debugger;
             const data={
                 "username":response.data.username,
