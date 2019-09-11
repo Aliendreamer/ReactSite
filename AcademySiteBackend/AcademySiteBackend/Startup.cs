@@ -111,8 +111,16 @@ namespace AcademySiteBackend
 						}
 
 						return Task.CompletedTask;
-					}
-				};
+					},
+                    OnChallenge = context =>
+                    {
+                        if (!context.Handled)
+                        {
+                            context.Response.Headers.Add("Challenged", "failed claims validations");
+                        }
+                        return Task.CompletedTask;
+                    }
+                };
 			});
 
 			services.AddAuthorization(options =>

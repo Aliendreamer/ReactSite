@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>F:\ReactSite\AcademySiteBackend\AcademySiteBackend\AcademySiteBackend.xml</DocumentationFile>
+    <DocumentationFile>C:\programing\ReactSite\AcademySiteBackend\AcademySiteBackend\AcademySiteBackend.xml</DocumentationFile>
     <NoWarn>1701;1702,1591</NoWarn>
   </PropertyGroup>
 
